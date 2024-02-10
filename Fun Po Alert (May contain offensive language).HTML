@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Po Revised</title>
+  </head>
+  <style>
+    body {
+      background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/306/original/kung_Fu_Panda.jpeg?1703475836;');
+      background-size: cover;
+    }
+    h1 {
+      text-align: center;
+      font-size: larger;
+      font-weight: bolder;
+    }
+    li {
+      list-style: none;
+      font-size: larger;
+      font-weight: bolder;
+      text-align: center;
+      position: relative;
+      right: 2%;
+      padding: 2px;
+      background-color: rgba(252, 196, 196, 0.4);
+    }
+  </style>
+  <body>
+    <h1>
+      You see Po standing on a rooftop cape flowing in the breeze.... and he
+      screams out...
+    </h1>
+    <ul>
+      <li>Po: What's your name?</li>
+      <li>Lord Shen: What?</li>
+      <li>Po: What IS your name?</li>
+      <li>Lord Shen: Tony.</li>
+      <li>Po: Fuck You TONY!</li>
+      <li>Lord Shen: What's YOUR name?!</li>
+      <li>Po: Ezekiel.</li>
+      <li>Lord Shen: Fuck you Ezekiel!</li>
+      <li>Po: FUCK YOU!!</li>
+      <li>Lord Shen: FUCK YOU!</li>
+      <li>Po: Hey, you know what I did last night?</li>
+      <li>Lord Shen: You better not bring my mother into this.</li>
+      <li>Po: Know what I did?</li>
+      <li>Lord Shen: You better not.</li>
+      <li>Po: I built that fire over there.</li>
+      <li>Lord Shen: oh</li>
+      <li>Po: Then I fucked your mother next to it!</li>
+      <li>Lord Shen: Fuck you Ezekiel!</li>
+      <li>Po: Fuck you!</li>
+    </ul>
+    <script>
+      let alerts = document.querySelectorAll('li');
+      function showScript(alertsElement) {
+        setTimeout(function () {
+          window.alert(alertsElement.innerHTML);
+        }, 50);
+      }
+
+      alerts.forEach(showScript);
+    </script>
+  </body>
+</html>
