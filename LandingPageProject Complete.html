@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExoticDracaena</title>
+  </head>
+  <style>
+    h1 {
+      text-decoration: none;
+      color: #ffffff;
+      text-align: center;
+      font-size: 50px;
+      font-weight: normal;
+      display: block;
+    }
+
+    h2 {
+      color: #d5d1e0;
+      font-weight: bold;
+      text-align: center;
+      font-size: 18px;
+      border-radius: 4px;
+    }
+
+    li {
+      display: block;
+      margin: 0 auto;
+      padding: none;
+      color: #1f2d26;
+    }
+    ul {
+      margin: 0 auto;
+    }
+
+    img {
+      padding: 20px;
+      border-radius: 4px;
+      max-width: 80%;
+      border: 1px solid #d5d1e0;
+      display: block;
+      margin: 18px;
+    }
+
+    h3 {
+      color: #d5d1e0;
+      font-weight: normal;
+      text-decoration: underline;
+      text-align: center;
+      font-size: x-large;
+    }
+
+    .final-project {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px 60px;
+      background-color: rgba(98, 140, 130, 0.875);
+    }
+    .story {
+      line-height: 1.5;
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #1f2d26;
+    }
+    .learn-more {
+      text-decoration: underline;
+      color: #22007e;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+    }
+    .sign-up {
+      display: block;
+      margin: 0 auto;
+      font-size: 22px;
+      background-color: #22007e;
+      color: antiquewhite;
+      padding: 20px;
+      border: none;
+      border-radius: 6px;
+      transition: all 150ms ease-in-out;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    .sign-up:hover {
+      opacity: 0.9;
+      cursor: pointer;
+      font-size: 23px;
+    }
+    .footer {
+      text-align: center;
+      color: #ffffff;
+      font-size: larger;
+    }
+
+    .explanation {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      color: #1f2d26;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <div class="final-project">
+      <h1>Fierce Dragon Dracaena Plant</h1>
+      <h2>
+        <hr />
+        The Magical Dragon Plant
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/040/original/IMG_2754.jpeg?1693263799"
+          alt="A Dracaena Plant"
+        />
+      </h2>
+      <div class="story">
+        <p>
+          The Dragon Tree took up residence as my largest plant in my tiny first
+          apartment. It was two feet tall, and my prize beauty. I loved it. When
+          I watered and cared for it well, it grew lush and full and green. When
+          I encountered the exact same variety in a business office that had
+          small stiff leaves, I would sneak it drinks from my water bottle.
+          Learn to care for your tree, you will love your Dragon Tree, too!
+        </p>
+      </div>
+      <ul>
+        <li><strong>Family:</strong> Asparagaceae</li>
+
+        <li><strong>Common Name: Dragontree </strong></li>
+
+        <li>
+          <strong>Botanical Names:</strong>Dracaena deremensis, Dracaena
+          steudneri, Dracaena marginata, Dracaena fragrans
+        </li>
+
+        <li><strong>Type: </strong> Broadleaf evergreen</li>
+
+        <li><strong>Height:</strong> 15.00 to 20.00 feet</li>
+
+        <li><strong>Spread: </strong> 3.00 to 10.00 feet</li>
+      </ul>
+
+      <div class="explanation">
+        <p>
+          <strong>
+            There are approximately 120 species of dracaena trees and shrubs.
+            Whether your favorite is marginata, massangenana, fragrans, or
+            possibly deremensis, each will give you a hefty return for very
+            little maintenance. This genus of plants can grow quite large and
+            are best kept under control by removing the top portion of the
+            plant. New foliage will emerge from the cut area and you can even
+            propagate the cutting! If you give this hearty indoor plant the
+            proper light and amount of water, it will become a lovely, long-term
+            resident in your home.
+          </strong>
+          <br />
+        </p>
+
+        <a
+          href="https://en.wikipedia.org/wiki/Dracaena_(plant)"
+          target="_blank"
+          class="learn-more"
+        >
+          Learn more on Wikipidia</a
+        >
+      </div>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/039/original/IMG_2766.jpeg?1693263689"
+        alt="A Dracaena Plant"
+      />
+      <span>
+        <h3>Dragon Plant care and tips delivered to your inbox weekly!</h3>
+      </span>
+      <button class="sign-up">🪴🌿🏵️Sign Me Up!</button>
+      <p class="footer">This page was built by Audria Yoachum</p>
+    </div>
+
+    <script>
+      function signUp() {
+        let name = prompt("What is your first name?");
+        let email = prompt("What is your email address?");
+
+        if (email.length > 0) {
+          alert(
+            "Welcome " +
+              name +
+              "! Your first newsletter has been sent to " +
+              email +
+              ". Happy growing!"
+          );
+        } else {
+          alert(name + " We will miss you!");
+        }
+      }
+
+      let buyButton = document.querySelector(".sign-up");
+      buyButton.addEventListener("click", signUp);
+    </script>
+  </body>
+</html>
