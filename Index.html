@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artful Creations</title>
+  </head>
+  <style>
+    
+    body {
+      background-color: #f3eed9;
+      margin: 10px;
+      transition: 100ms ease-in-out;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      font-size: xx-large;
+      padding: 10px;
+    }
+    
+    footer{
+      word-wrap: normal;
+      margin: 20px 3px;
+      text-align: center;
+    }
+
+    button:hover {
+      cursor: pointer;
+      background-color: #B7C3C3;
+      transform: scale(1.25);
+    }
+    .dark-theme-button {
+      position: absolute;
+      top: 10px;
+      right: 40px;
+      border-radius: 10px;
+      background-color: White;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-size: 18px;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      color: rgb(18, 32, 63);
+      font-weight: 700;
+      border: 1.3px solid black;
+      font-variant: small-caps;    
+    }
+
+    .scroll-container {
+      background-color: #f3eed9;
+      overflow: auto;
+      white-space: nowrap;
+      padding: 2px;
+    }
+
+    .scroll-container img {
+      padding: 0px;
+      max-height: 150px;
+    }
+
+    .anecdote {
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      font-size: 23px;
+      letter-spacing: -0.2px;
+      word-spacing: 0.2px;
+    }
+    
+    .anecdote h3 {
+      font-size: small;
+    }
+
+    .staff-section {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background-color: white;
+      min-height: 100%;
+      max-height: fit-content;
+      border: 5px solid white;
+    }
+
+    .staff-section img {
+      max-width: 100%;
+      border-style:groove;
+      box-shadow: 7px 7px 3px #aaaaaa;
+    }
+
+    .staff-section img:hover {
+      box-shadow: none;
+      transform: scale(.99);
+    }
+
+    .staff-section a{
+      font-size:2vw;
+      padding: 30px 4px;
+      margin-left: 7px;
+    }
+
+    .logo-section-grid {
+      display: grid;
+      grid-template-columns: 4fr 1fr;
+    }
+
+    .logo-cutout {
+      max-height: 250px;
+      position: relative;
+      top: 10%;
+      right:10%;
+    }
+
+    .social-media-grid {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .social-media-grid button {
+      margin: 3%;
+      padding: 10px;
+      border: none;
+      color: black;
+      background-color: #B7C3C3;
+      font-size: 20px;
+      border-radius: 6px;
+    }
+    
+    .dark{
+      background: linear-gradient(143deg, rgb(18, 32, 63) 20%, rgb(82, 45, 25) 125%);
+      color: #9FFDFC;
+    }
+    .dark button{
+      background-color: #9FFDFC;
+      color: black;
+    }
+    .dark img{
+      filter: contrast(2);
+    }
+   
+    
+  </style>
+  <body>
+    <button class="dark-theme-button" id="theme">Change to AWESOME and back</button> 
+    <header>
+      <h1>The Most Iconic</br>Of All Fantasy Art</br>Is The Dragon</h1>
+    </header>
+
+    <section class="scroll-container">
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/267/original/1.jpg?1705691388"
+      target="_blank">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/267/original/1.jpg?1705691388"
+        alt="Image of a hand crafted wooden chest."
+      /></a>
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/268/original/2.jpg?1705691396">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/268/original/2.jpg?1705691396"
+        alt="Image of top of green dragon eye chest."
+      /></a>
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/269/original/3.jpg?1705691403">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/269/original/3.jpg?1705691403"
+        alt="Image of side of green dragon eye chest."
+      /></a>
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/270/original/4.jpeg?1705691409">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/270/original/4.jpeg?1705691409"
+        alt="Image of blue glow dragon egg."
+      /></a>
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/271/original/5.jpg?1705691416">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/271/original/5.jpg?1705691416"
+        alt="Image of blue egg with dragon scales."
+      /></a>
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/272/original/6.jpeg?1705691423">      
+       <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/274/original/7.jpg?1705691440">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/274/original/7.jpg?1705691440"
+        alt="Image of a dragon eye made of clay, painted iridescent."
+      /></a>  <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/272/original/6.jpeg?1705691423"
+        alt="Image of a dragon pupil."
+      /></a>     
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/275/original/8.jpg?1705691449">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/275/original/8.jpg?1705691449"
+        alt="Image of small red burned chest."
+      /></a>
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/277/original/9.jpg?1705691457">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/277/original/9.jpg?1705691457"
+        alt="Image of small green burned chest."
+      /></a>
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/279/original/17.jpg?1705691472">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/279/original/17.jpg?1705691472"
+        alt="Image of an orange tile that says: Eat it or starve."
+      /></a>
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/281/original/18.jpg?1705691484">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/281/original/18.jpg?1705691484"
+        alt="Image of front of meduim mahogany stain wooden treasure chest."
+      /></a>
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/283/original/20.jpg?1705691493">
+      
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/283/original/20.jpg?1705691493"
+        alt="Image of a cest of carved painted dragon eggs."
+      /></a>
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/284/original/21.jpg?1705691503">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/284/original/21.jpg?1705691503"
+        alt="Image of a black and green carved dragon egg."
+      /></a>
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/285/original/22.jpg?1705691512">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/285/original/22.jpg?1705691512"
+        alt="Image of a purple dragon egg."
+      /></a>
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/286/original/23.jpeg?1705691521">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/286/original/23.jpeg?1705691521"
+        alt="Image of a black and green dragon egg with gemstones."
+      /></a>
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/287/original/24.jpg?1705691532">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/287/original/24.jpg?1705691532"
+        alt="Image of an orange and yellow dragon egg."
+      /></a>
+
+      <a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/288/original/25.jpeg?1705691540"
+       >
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/288/original/25.jpeg?1705691540"
+        alt="Image of a mermaid scale carved dragon egg."
+      /></a>
+
+
+    </section>
+
+    <div class="logo-banner">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/244/original/310394734_129787933146045_3429917383988341767_n_%281%29.jpg?1706232921"
+        alt="Logo"
+        width="100%"
+      />
+    </div>
+
+    <div class="anecdote">
+      <h2>From our home to yours...</h2>
+      <h3>
+        According to the legend, which has been passed down to us through the
+        wise and all-knowing Princess Analise. Dragon mothers search the world
+        over for the finest of vessels to place their baby dragons. Only when
+        held by someone they deem equal in heart and mind will this baby dragon
+        hatch from its vessel. Your dragon egg may not hatch for centuries.
+        Continue to believe and work on keeping your heart and mind pure.
+      </h3>
+      <main class="staff-section" id="staff">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/024/original/lorrie.jpg?1706139109"
+        alt="Picture of Lorrie."/>
+        <a>Lorrie is a mother, a wife and a stunning designer. Find her at craft shows all up and down the Wasach Front!</a>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/023/original/mike.jpg?1706139100"
+        alt="Picure of Mike and his wife Christina."/>
+        <a> Mike is a wonderful son, husband and father himself. Often covered in paint spots or glue... shake his hand anyway! </a>
+      </main>
+
+      <div class="logo-section-grid">
+        <h2>Connect with us on... <div class="social-media-grid">
+        <a href="https://www.facebook.com/Lorrieandmike" target="_blank">
+          <button>Facebook</button>
+        </a>
+        <a
+          href="https://www.mercari.com/u/342255053/?tracking_ref_id=m70745867984"
+          target="_blank"
+        >
+          <button>Mercari</button>
+        </a>
+        <a
+          href="mailto:lorriest@comcast.net"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button>Email</button>
+        </a></h2>
+        <img
+          class="logo-cutout"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/247/original/logo.jpg?1705683379"
+          alt="logo."
+        />
+      </div>
+      </div>
+      <footer>
+        <div>
+          <h3>This website was coded by a <a href="http://www.shecodes.io"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/044/original/shecodes.png?1706162114" alt="Logo of SheCodes dot i.o. website." width="100px"        
+          />
+            </a>student Audria Yoachum in 2024.
+          </h3>
+        </div>
+      </footer>
+    </div>
+    <script>
+      function makeItAwesome(){
+       let body = document.querySelector("body");
+
+       body.classList.toggle("dark");
+        
+       let section = document.querySelector("section");
+      
+       section.classList.toggle("dark");
+
+       let main = document.querySelector("main");
+        
+       main.classList.toggle("dark");
+       
+       
+      }
+      
+        let darkThemeButton = document.querySelector(".dark-theme-button");
+        darkThemeButton.addEventListener('click', makeItAwesome);
+
+    </script>
+
+  </body>
+</html>
